@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Frontend Mentor | Password Generator app</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicon-32x32.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="page-bg">
+      <div class="container">
+        <h2 class="title">Password Generator</h2>
+        <div class="card">
+          <div class="output-row">
+            <code id="password" class="password">PTx1f5DaFX</code>
+            <button id="copy" class="copy-btn" title="Copy password">
+              <img src="assets/images/icon-copy.svg" alt="Copy" width="21" height="24" />
+            </button>
+          </div>
+
+          <div class="controls">
+            <div class="length-row">
+              <label for="length">Character Length</label>
+              <span id="lengthValue" class="length-value">10</span>
+            </div>
+            <input type="range" id="length" min="4" max="32" value="10" />
+
+            <div class="options">
+              <label><input type="checkbox" id="upper" checked /> Include Uppercase Letters</label>
+              <label><input type="checkbox" id="lower" checked /> Include Lowercase Letters</label>
+              <label><input type="checkbox" id="numbers" checked /> Include Numbers</label>
+              <label><input type="checkbox" id="symbols" /> Include Symbols</label>
+            </div>
+
+            <div class="strength-row">
+              <div class="strength-label">STRENGTH</div>
+              <div class="strength-meter">
+                <div id="bar1" class="bar"></div>
+                <div id="bar2" class="bar"></div>
+                <div id="bar3" class="bar"></div>
+                <div id="bar4" class="bar"></div>
+              </div>
+              <div id="strengthText" class="strength-text">MEDIUM</div>
+            </div>
+            <button id="generate" class="generate">
+              GENERATE
+              <img src="assets/images/icon-arrow-right.svg" alt="Generate" width="12" height="12" style="vertical-align:middle;margin-left:8px;" />
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
